@@ -419,13 +419,6 @@ my $testParams = {
         "options" => "window 3 2",
     },
 
-    "ubgears" => {
-        "logmsg" => "3D graphics: gears",
-        "cat"    => '3d',
-        "options" => "-time 20 -v",
-    },
-
-
     ##########################
     ## Non-Index Benchmarks ##
     ##########################
@@ -837,9 +830,6 @@ sub getSystemInfo {
     if (defined($numCpus)) {
         $info->{'numCpus'} = $numCpus; # overwrite value from getCpuinfo()
     }
-
-    # Get graphics hardware info.
-    $info->{'graphics'} = getCmdOutput("3dinfo | cut -f1 -d\'(\'");
 
     # Get system run state, load and usage info.
     $info->{'runlevel'} = getCmdOutput("who -r | awk '{print \$3}'");
