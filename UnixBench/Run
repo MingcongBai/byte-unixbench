@@ -138,7 +138,7 @@ my $index = [
 
 my $graphics = [
     "2d-rects", "2d-ellipse", "2d-aashapes", "2d-text", "2d-blit",
-    "2d-window", "ubgears"
+    "2d-window"
 ];
 
 
