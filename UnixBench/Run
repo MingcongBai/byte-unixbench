@@ -187,8 +187,6 @@ my $testList = {
     "2d-blit"       => undef,
     "2d-window"     => undef,
 
-    "ubgears"       => undef,
-
     # Named combos and shorthands.
     "arithmetic"    => $arithmetic,
     "dhry"          => [ "dhry2reg" ],

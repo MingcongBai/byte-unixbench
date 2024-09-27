@@ -127,9 +127,6 @@ The following individual tests are available:
     2d-blit          2D graphics: images and blits
     2d-window        2D graphics: windows
 
-  3d:
-    ubgears          3D graphics: gears
-
   misc:
     C                C Compiler Throughput ("looper 60 $cCompiler cctest.c")
     arithoh          Arithoh (huh?)
@@ -171,7 +168,7 @@ tests:
                      See "The BYTE Index" below for more information.
     graphics         Runs the tests which constitute the graphics index:
                      2d-rects, 2d-ellipse, 2d-aashapes, 2d-text, 2d-blit,
-                     2d-window, and ubgears
+                     and 2d-window
     gindex           Runs the index and graphics groups, to generate both
                      sets of index results
 
@@ -224,7 +221,7 @@ for these tests are separate from the basic system index.  This seems
 like a sensible division, since the graphics performance of a system
 depends largely on the graphics adaptor.
 
-The tests currently consist of some 2D "x11perf" tests and "ubgears".
+The tests currently consist of some 2D "x11perf" tests.
 
 * The 2D tests are a selection of the x11perf tests, using the host
   system's x11perf command (which must be installed and in the search
@@ -232,10 +229,6 @@ The tests currently consist of some 2D "x11perf" tests and "ubgears".
   of completing a test run in a reasonable time; if you want to do
   detailed diagnosis of an X server or graphics chip, then use x11perf
   directly.
-
-* The 3D test is "ubgears", a modified version of the familiar "glxgears".
-  This version runs for 5 seconds to "warm up", then performs a timed
-  run and displays the average frames-per-second.
 
 On multi-CPU systems, the graphics tests will only run in single-processing
 mode.  This is because the meaning of running two copies of a test at once
